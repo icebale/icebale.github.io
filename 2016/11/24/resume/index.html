@@ -118,7 +118,7 @@ QQ：1228001601
 Github：https://github.com/icebale
 
 期望职位：Web前端工程师方面">
-<meta property="og:updated_time" content="2016-11-24T08:32:47.987Z">
+<meta property="og:updated_time" content="2016-11-24T14:01:51.441Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="resume">
 <meta name="twitter:description" content="Web前端程序员求职简历
@@ -352,7 +352,13 @@ Github：https://github.com/icebale
           
 
           
-
+		  
+		  
+		  	 <span id="/2016/11/24/resume/"class="leancloud_visitors"  data-flag-title="resume">
+            &nbsp; | &nbsp; 阅读次数
+            </span>
+		  
+		  
           
           
              <span id="/2016/11/24/resume/" class="leancloud_visitors" data-flag-title="resume">
@@ -398,14 +404,6 @@ Github：https://github.com/icebale
 </ul>
 <hr>
 <h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><p>以下均为我熟练使用的技能</p>
-<ul>
-<li>Web开发：PHP/Node</li>
-<li>前端框架：Bootstrap/AngularJS/AmazeUI/Materialize</li>
-<li>前端工具：Gulp/SaSS/LeSS</li>
-<li>版本管理、文档和自动化部署工具：Svn/Git</li>
-</ul>
-<hr>
-<h1 id="技能清单-1"><a href="#技能清单-1" class="headerlink" title="技能清单"></a>技能清单</h1><p>以下均为我熟练使用的技能</p>
 <ul>
 <li>Web开发：PHP/Node</li>
 <li>前端框架：Bootstrap/AngularJS/AmazeUI/Materialize</li>
@@ -592,7 +590,7 @@ Github：https://github.com/icebale
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Web前端程序员求职简历"><span class="nav-number">1.</span> <span class="nav-text">Web前端程序员求职简历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联系方式"><span class="nav-number">2.</span> <span class="nav-text">联系方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人信息"><span class="nav-number">3.</span> <span class="nav-text">个人信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技能清单"><span class="nav-number">4.</span> <span class="nav-text">技能清单</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技能清单-1"><span class="nav-number">5.</span> <span class="nav-text">技能清单</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#致谢"><span class="nav-number">6.</span> <span class="nav-text">致谢</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Web前端程序员求职简历"><span class="nav-number">1.</span> <span class="nav-text">Web前端程序员求职简历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#联系方式"><span class="nav-number">2.</span> <span class="nav-text">联系方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人信息"><span class="nav-number">3.</span> <span class="nav-text">个人信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技能清单"><span class="nav-number">4.</span> <span class="nav-text">技能清单</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#致谢"><span class="nav-number">5.</span> <span class="nav-text">致谢</span></a></li></ol></div>
             
           </div>
         </section>
@@ -872,7 +870,7 @@ Github：https://github.com/icebale
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("7heo7zJ7LoUjf0hPhL2FfsNf-gzGzoHsz", "QLDepheb3uQqjQXCPGK2JVWO");</script>
+  <script>AV.initialize("rgXVsPn2eMGzmDDa755rHBqT-gzGzoHsz", "42urlRFLBgtP0aRuLIntQwUj");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
@@ -978,6 +976,88 @@ Github：https://github.com/icebale
 
 
   
-
+  
+  
+  	 <!-- custom analytics part create by xiamo -->
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("rgXVsPn2eMGzmDDa755rHBqT-gzGzoHsz", "42urlRFLBgtP0aRuLIntQwUj");</script>
+<script>
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+	$(".leancloud_visitors").each(function() {
+		var url = $(this).attr("id").trim();
+		query.equalTo("url", url);
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {
+					var content = $(document.getElementById(url)).text() + ': 0';
+					$(document.getElementById(url)).text(content);
+					return;
+				}
+				for (var i = 0; i < results.length; i++) {
+					var object = results[i];
+					var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
+					$(document.getElementById(url)).text(content);
+				}
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+	});
+}
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else if ($('.post-title-link').length > 1) {
+		showTime(Counter);
+	}
+});
+</script>
+  
 </body>
 </html>
